@@ -25,4 +25,5 @@ print(round(result, 2)) # 평균값
 
 # 문제4) list b에서 최소값 찾기!
 b = [22, 1, 4, 7, 98]
+num_min = min(b)
 print(num_min)  # 1 출력
