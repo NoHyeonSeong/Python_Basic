@@ -1,28 +1,17 @@
-# 데이터베이스(DB): 데이터를 효율적으로 저장하는 시스템(이론)
-# FileSystem: 폴더를 사용할 저장
+# DAO: Database Access Object
+#  - 데이터 작업(CRUD)을 하는 객체
 
-# 데이터베이스관리시스템(DBMS): DB 이론을 실제로 구현!
+# 회원 => member_dao
+# 로그인 => login_dao
+# 뉴스 => news_dao
+# 상품 => product_dao
 
-# ** DBMS 종류
-#  1) 관계형 데이터베이스(RDB) : 전통적인(스키마:명세서)
-#   - ORACLE
-#   - MTSQL
-#   - MariaDB
+from db.common.connection import conn_mongodb
 
-# 2) NoSQL : NEW
-#   - MongoDB
-#   - Redis
+# 뉴스(제목, 본문, URL) 저장
 
-# ** DB 프로세스
-#  - DOL ID와 PW 저장
-#  Pycharm(Python)  ---------------------- DB(MongoDB)
-#   1) Pytharm과 DB Connection 맺기
-#       - IP: 컴퓨터를 찾아갈 수 있는 주소!
-#       - PORT: 컴퓨터 내에서 특정 프로그램의 위치
-#       - ID and PW:
-#   2) SQL을 사용해서 DB에 CRUD작업 진행
-#      - SQL(구조질의어): DB와 소통할 수 있는 언어(반드시)
-#      Create(삽입)   → INSERT
-#      Read(조회)     → SELECT
-#      Update(수정)   → UPDATE
-#      Delete(삭제)   → DELETE
+def add_news(data):
+    conn = conn_mongodb()   # 1. connection
+    conn.insert_one(data)   # 2. DB에 저장
+
+    
