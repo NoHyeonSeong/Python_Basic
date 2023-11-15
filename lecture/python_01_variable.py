@@ -1,5 +1,7 @@
 # 주석(comment) : 단순 메모, 개발 실행 X
 driver = webdriver.Chrome(service=Service(ChromDriverManger().install()), options=options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 # 출력 함수(print)
 # - ()안의 값을 출력
 # - 변수 값 확인 용도 또는 메세지 출력 용도
