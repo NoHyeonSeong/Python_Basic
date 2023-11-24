@@ -1,3 +1,4 @@
+https://github.com/ChoLong02/Python_basic
 # 주석(comment) : 단순 메모, 개발 실행 X
 # 출력 함수(print)
 # - ()안의 값을 출력
