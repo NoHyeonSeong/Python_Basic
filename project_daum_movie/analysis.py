@@ -3,12 +3,11 @@
 
 import pandas as pd
 from datetime import datetime
-from db.moive_dao import get_reviews
+from db.movie_dao import get_reviews
 
-review = get_reviews()
-print(reviews)
+reviews = get_reviews()
 # DB에서 가져온 데이터 확인
-for items in reviews:
+for item in reviews:
     print(item)
 
 # dict Type의 데이터를 Table 생성
@@ -18,3 +17,6 @@ print(df_save)
 
 now = datetime.now().strftime("%Y%m%d")
 df_save.to_excel(f"./review_save_{now}.xlsx", index=False)
+
+
+

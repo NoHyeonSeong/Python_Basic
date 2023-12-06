@@ -13,7 +13,7 @@ import re
 import math
 from bs4 import BeautifulSoup
 
-from db.moviedao import add_review, get_last_review
+from db.movie_dao import add_review, get_last_review
 # pip install webdriver_manager
 # pip install selenium
 
