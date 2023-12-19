@@ -8,3 +8,8 @@ a = int(input())
 for i in range(a):
   print("*" * (i + 1))
 
+# 역직각삼각형
+a = int(input())
+for i in range(a):
+  print("" * (a - (i + 1)), end="")
+  print("*" * (i + 1))
