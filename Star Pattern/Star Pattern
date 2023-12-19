@@ -8,7 +8,7 @@ a = int(input())
 for i in range(a):
   print("*" * (i + 1))
 
-# 역직각삼각형(오른쪽 정렬)
+# 직각삼각형(오른쪽 정렬)
 a = int(input())
 for i in range(a):
   print(" " * (a - (i + 1)), end="")
