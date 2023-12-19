@@ -3,16 +3,18 @@ a = int(input())
 for i in range(a):
   print("*" * a)
 
-# 직각삼각형
+# 직각삼각형(왼쪽 정렬)
 a = int(input())
 for i in range(a):
   print("*" * (i + 1))
 
-# 역직각삼각형
+# 역직각삼각형(오른쪽 정렬)
 a = int(input())
 for i in range(a):
   print(" " * (a - (i + 1)), end="")
   print("*" * (i + 1))
+
+
 
 # 피라미드
 a = int(input())
