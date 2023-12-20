@@ -14,6 +14,11 @@ for i in range(a):
   print(" " * (a - (i + 1)), end="")
   print("*" * (i + 1))
 
+# 역직각삼각형(왼쪽 정렬)
+a = int(input())
+for i in range(a):
+  print("*" * (a - i))
+
 # 역직각삼각형(오른쪽정렬)
 a = int(input())
 for i in range(a):
