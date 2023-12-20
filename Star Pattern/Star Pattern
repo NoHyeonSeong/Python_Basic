@@ -56,4 +56,15 @@ for i in range(a - 1):
     print(" " * (a - i - 2), end="")
     print("*" * ((2 * i) - a // 2 - 1))
 
+# 웹크롤링
+import requests
+from bs4 import BeautifulSoup
+
+url = "링크"
+result = requests.get(url)
+doc = BeautifulSoup(result.text, "html.parser")
+reg_date = doc.select("f12개발자코드넣")[0].get_text()
+print(reg_date)
+
+
 
