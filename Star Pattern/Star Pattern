@@ -31,6 +31,11 @@ for i in range(a):
   print(" " * (a - (i + 1)), end="")
   print("*" * (2 * i + 1))
 
+# 역피라미드
+a = int(input())
+for i in range(a, 0, -1):
+  print(" " * (a - i) + "*" * (2 * i - 1))
+
 # 마름모
 a = int(input())
 for i in range(a):
